@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+:root{ --main-color: #000000f2 ; }
+
+.navigationBar{
+    background-color:#000000;
+    font-size: 1.4rem;
+    transition: all 1s;
+    z-index: 9999999;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    
+} 
+nav{
+    width: 280px;
+    z-index: 99999999;
+}
+#navIcon{
+display:block;
+}
+#navExitIcon{
+    display: none;
+}
+.navSocial a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+
+}
+.navigationBar a{
+    transition: all 0.5s;
+}
+.navSocial a:hover{
+    color: #ff655c;
+}
+.navigationBar li a:hover{
+    color: #ff655c !important;
+}
+
+.navOpenbar{
+    height: inherit;
+}
+.navOpenbar li{
+    font-size: 1.5rem;
+}
+.top-90{
+    top: 90%;
+}
+.top-85{
+    top: 85%;
+}
+/*-------------------------------------------------------------------*/
+#home{
+padding:25px 0 25px 0;
+    background-color: var(--main-color)
+}
+.form-control {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+}
+.movie{
+    overflow: hidden;
+}
+.movie img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.movie:hover .movieLayer{
+    top: 0;
+}
+.shadow{
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.movieLayer{
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.575);
+    z-index: 999;
+    padding-top: 50px;
+    transition: all 1s;
+}
+
+.movieLayer .info h2{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+
+
+}
+.movieLayer .info p{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+/*---------------------------------------------------*/
+footer{
+    background-color: var(--main-color);
+}
+
+.btnSubmit{
+    background-color: transparent;
+    font-size: large;
+    color: #dc3545;
+}
+#nameAlert,#emailAlert,#phoneAlert,#ageAlert,#passwordAlert,#repasswordAlert{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    background-color: #da929ac0;
+    transition: all 1s;
+}

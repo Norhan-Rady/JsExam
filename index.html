@@ -1,0 +1,173 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      
+        <nav class="position-fixed">
+          <div class=" navigationBar position-relative">
+            <ul class="py-4">
+              <li class="pt-4">
+                <a class="text-decoration-none text-white active" >Now Playing</a>
+              </li>
+              <li class="pt-4">
+                <a class="text-decoration-none text-white" >Popular</a>
+              </li>
+              <li class="pt-4">
+                <a class="text-decoration-none text-white">Top Rated</a>
+              </li>
+              <li class="pt-4">
+                <a class="text-decoration-none text-white" >Trending</a>
+              </li>
+              <li class="pt-4">
+                <a class="text-decoration-none text-white ">Upcoming</a>
+              </li>
+              <li class="pt-4">
+                <a class="text-decoration-none text-white" href="#contactUs" >Contact Us</a>
+              </li>
+            </ul>
+            <div class="navSocial p-4 mt-5">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-solid fa-globe"></i></a>
+              <p class="text-white pt-3">Copyright Â© 2019 All Rights Reserved.</p>
+            </div>
+            <div class="position-absolute position-relative navOpenbar start-100 top-0 bg-white px-2" >
+              <img src="images/logo.png" alt="Logo">
+              <ul>
+                <li class="position-absolute top-50 translate-middle-x"> <i id="navIcon" class="fa-solid fa-bars text-dark"></i> <i id="navExitIcon" class="fa-solid fa-xmark text-dark  mt-1"></i></li>
+                <li  class="position-absolute translate-middle-x top-85">  <a href=""><i class="fa-solid fa-globe text-dark"></i></a></li>
+                <li  class="position-absolute translate-middle-x top-90"> <i class=" fa-solid fa-share-nodes text-dark"></i></li>
+              </ul>
+             
+              
+           
+            </div>
+          </div>
+        </nav>       
+    
+
+      <header id="home" class="py-5">
+        <div>
+          <div class="container pt-5  mt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <input id="movies" class="form-control mb-5 " placeholder="Get Movies In Catagory...">
+              </div>
+              <div class="col-md-6">
+                <input id="search" class="form-control mb-5 " placeholder="Search All...">
+              </div>
+            </div>
+          </div>`
+        </div>
+
+        <div>
+          <div class="container">
+            <div class="row moviesData">
+              <div class="col-md-4 ">
+                <div class="movie shadow position-relative">
+                  <img src="images/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" alt="film">
+                  <div class="movieLayer position-absolute">
+                    <div class="info p-0">
+                      <h2>Doctor Strange in the Multiverse of Madness</h2>
+                      <p>Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                      <p>rate: 7.6</p>
+                      <p>2022-05-04</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <footer id="contactUs" class="py-5" >
+       
+        <div class="container">
+          <h2 class="text-white">ContacUs...</h2>
+          <form class="py-5">
+            <div class="row">
+            
+              <div class="col-md-6 ">
+                <div class="position-relative">
+                  <input id="name" class="form-control mb-5 " placeholder="Enter Your Name">
+                  <div id="nameAlert" class=" d-none w-100  ">
+                    <p class="d-flex align-items-center justify-content-center h-100">Your Name is Not Valid (First letter should be capital)</p>
+                  </div>
+                </div>
+                </div>
+              
+              <div class="col-md-6">
+                <div class="position-relative">
+                  <input id="email" type="email" class="form-control mb-5 " placeholder="Enter Your Email">
+                  <div id="emailAlert" class=" d-none w-100  ">
+                    <p class="d-flex align-items-center justify-content-center h-100">Enter a valid email</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="position-relative">
+                  <input id="phone" type="number" class="form-control mb-5 " placeholder="Enter Phone">
+                  <div id="phoneAlert" class=" d-none w-100  ">
+                    <p class="d-flex align-items-center justify-content-center h-100">Enter a valid number</p>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="col-md-6">
+                <div class="position-relative">
+                  <input id="age" type="number" class="form-control mb-5 " placeholder="Enter Age">
+                  <div id="ageAlert" class=" d-none w-100  ">
+                    <p class="d-flex align-items-center justify-content-center h-100">Enter a valid age</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="row">            
+              <div class="col-md-6">
+                <div class="position-relative">
+                  <input id="password" type="password" class="form-control mb-5 " placeholder="Enter Password">
+                  <div id="passwordAlert" class=" d-none w-100  ">
+                    <p class="d-flex align-items-center justify-content-center h-100">Enter a valid Password</p>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="col-md-6">
+                <div class="position-relative">
+                  <input id="repassword" type="password" class="form-control mb-5 " placeholder="Enter RePassword">
+                  <div id="repasswordAlert" class=" d-none w-100  ">
+                    <p class="d-flex align-items-center justify-content-center h-100">password not matched</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+
+            <button disabled class="btn btn-danger btnSubmit py-2 px-3" type="submit"> submit </button>
+          </form>
+      
+         
+        </div>
+      </footer>
+
+
+        <script src="js/jquery-3.6.0.min.js"></script> 
+        <script src="Js/bootstrap.bundle.min.js"></script>
+        <script src="Js/main.js"></script>
+        
+    </body>
+</html>
